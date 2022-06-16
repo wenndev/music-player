@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="image">
+          <img src="images/ignorance-is-a-bliss.jpg" alt="" />
+        </div>
+        <div class="information">
+          <div class="description">
+            <h2>Music</h2>
+            <h3>Artist</h3>
+          </div>
+
+          <div class="duration">
+            <div class="loading-music">
+              <progress value="0" max="1" class=""></progress>
+              <div class="point-loading"></div>
+            </div>
+            <div class="time-music">
+              <p class="start">0:00</p>
+              <p class="end">0:00</p>
+            </div>
+          </div>
+          <div class="play">
+            <i class="fa-solid fa-backward-step arrows previous"></i>
+            <i class="fa-solid fa-circle-play button-play"></i>
+            <i class="fa-solid fa-circle-pause button-pause"></i>
+            <i class="fa-solid fa-forward-step arrows next"></i>
+        </div>
+        <audio src="music/bullet-from-a-gun.mp3"></audio>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
